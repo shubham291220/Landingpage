@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: General 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+::selection{
+  background-color: lightcoral;
+  color: whitesmoke;  
+}
+#main{
+    background-color: salmon;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#box{
+    width: 30%;
+    height: 60%;
+    background-color:blanchedalmond;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#box h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top:1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: black;
+}
+#box h2::after{
+    border-bottom: 1px solid red;
+}
+.details{
+    width:85%;
+    line-height: 1rem;
+    margin:0 auto;
+    margin-bottom: 1rem;
+}
+.active{
+    margin-top: 2rem;
+}
+.details h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.details input{
+    width: 90%;
+    height: 25px;
+    /* border: none; */
+    padding: 5px 1rem 5px 0.4rem;
+
+}
+.details input:active{
+    border: none;
+}
+input::first-letter{
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    /* font-size: 1rem; */
+    /* font-size: 500; */
+    color: black;
+}
+.sign-btn:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.sign-up-btn{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.sign-up-btn span{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.submit-btn{
+    text-align: center;
+    margin-top: 1rem;
+}
+.submit-btn button{
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    box-shadow: inset 1px 5px 10px grey;
+    border-radius: 5px;
+    transition: all ease 0.5s;
+}
+.submit-btn button:hover{
+    background: linear-gradient(to right,red,green);
+    color: blanchedalmond;
+}
